@@ -1,0 +1,89 @@
+/* @import "bootstrap"; */
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: #3366FF;
+  color: #FFFFFF;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+/* header */
+
+header hr {
+	color: #FFF;
+	background-color: #FFF;
+	height: 2px;
+	border-width: 0px;
+	padding-top: 0px;
+
+}
+
+/* footer */
+
+footer hr {
+	color: #FFF;
+	background-color: #FFF;
+	height: 2px;
+	border-width: 0px;
+ 
+}
+
+footer {
+  color: #CCC;
+
+}
+
+footer a {
+  color: #CCC;
+}
+
+footer a:hover {
+  color: #222;
+
+}
+
+footer small {
+  float: left;
+  font-size: 11px;
+  
+}
+
+/* messages */
+
+messages {
+	color: #CFF;
+	font-size: 22px;
+	font-family:"Calibri", Verdana, sans-serif;
+}
+
+messages div {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 60px;
+	padding-right: 250px;
+
+}
+
+/* illustration */
+
+illustration {
+	float: left;
+	padding-left: 15px;
+
+}
