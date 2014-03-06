@@ -1,8 +1,10 @@
 Acavltd::Application.routes.draw do
   get "static_pages/home" 
   root "static_pages#home"
-  get "static_pages/contact"
- 
+  
+	resources :inquiries, :only => [:new, :create] do
+		get 'thank_you', :on => :collection
+	end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
