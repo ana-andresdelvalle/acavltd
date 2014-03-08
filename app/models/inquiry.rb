@@ -31,10 +31,11 @@ class Inquiry
     return false unless valid?
     Pony.mail({
       :from => %("#{name}" <#{email}>),
+     # :from => email, it does not work - it always taes the smpt address
       :reply_to => email,
-      :subject => "Website inquiry",
-      :body => message,
-      :html_body => message
+      :subject => "ACAV Ltd. - Web Inquiry",
+      :body => "\n\nName:    " + name + "\n\nEmail:   " + email + "\n\nQuestion:\n\n\t" + message + "\n\n\n-- End of request --" ,
+    #  :html_body => "<div>" + name + " <BR/>     " + email + " <BR/>     " + message + "</div>"
     })
   end
       
