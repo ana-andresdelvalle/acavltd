@@ -2,6 +2,11 @@
 <html>
 
 <head>
+   
+   <!-- both lines od teh same and both work /-->
+   <link rel="shortcut icon" href="http://ana.andres.free.fr/heroku/images/favicon.ico"/>
+     <%= favicon_link_tag %>
+  
   <% if content_for? :for_head %>
     <%= yield :for_head %>
   <% end %>
