@@ -7,9 +7,9 @@ html {
 }
 
 body {
-  padding-top: 30px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-top: 1%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
   background-color: #3366FF;
   color: #FFFFFF;
 	font-family:"Calibri", Verdana, sans-serif;
@@ -27,6 +27,10 @@ textarea {
 
 /* header */
 
+header img {
+	width: 25%;
+
+}
 
 header hr {
 	color: #FFF;
@@ -40,7 +44,7 @@ header hr {
 .slogan {
 
 	color: #309;
-	font-size: 35px;
+	font-size: 150%;
 	font-family:"Andalus", Verdana, sans-serif;
 	font-style: italic;
 	font-weight: bold;
@@ -51,22 +55,22 @@ header hr {
 /* home */
 
 .home {
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 2%;
+	margin-bottom: 2.5%;
 }
 
 /* illustration */
 
 illustration {
 	float: left;
-	padding-left: 15px;
-	header: 50px;
+	padding-left: 2%;
+	padding-right: 2%;
 
 }
 
 illustration img { 
 	 
-	width: 200px; 
+	width: 100%; 
 	overflow: hidden; 
 }
 
@@ -74,15 +78,15 @@ illustration img {
 
 messages {
 	color: #CFF;
-	font-size: 23px;
+	font-size: 150%;
 	font-family:"Calibri", Verdana, sans-serif;
 }
 
 messages div {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	padding-left: 60px;
-	padding-right: 250px;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+	padding-left: 3%;
+	padding-right: 20%;
 
 }
 
@@ -113,13 +117,13 @@ footer a:hover {
 
 footer small {
   float: left;
-  font-size: 11px;
+  font-size: small;
   
 }
 
 #share-buttons img {
-width: 35px;
-padding: 5px;
+width: 3%;
+padding: .5%;
 border: 0;
 box-shadow: 0;
 display: inline;
@@ -137,7 +141,7 @@ request table{
 request div {
 
 	color: #CFF;
-	font-size: 19px;
+	font-size: 125%;
 	font-family:"Calibri", Verdana, sans-serif;
 	
 }
@@ -168,17 +172,17 @@ request div {
 	display:inline-block;
 	color:#777777;
 	font-family:Arial;
-	font-size:15px;
+	font-size: medium;
 	font-weight:bold;
 	font-style:normal;
 	height:40px;
 	line-height:40px;
-	width:105px;
+	width: 150%;
 	text-decoration:none;
 	text-align:center;
 	text-shadow:1px 1px 0px #ffffff;
 
-	margin-left: 25px;
+	margin-left: 4%;
 	
 }
 
@@ -200,20 +204,29 @@ request div {
 
 .contact_form {
 
-	margin-top: 25px;
-	margin-bottom: 50px;
-
+	margin-top: 2.5%;
+	margin-bottom: 5%;
+	font-size: 125%;
 }
 
+.contact_form h1 {
+	font-size: 150%;
+}
+
+.contact_form p {
+	font-size: 125%;
+}
+
+
 .new_inquiry input {
-	margin-left: 100px;
+	margin-left: 2.5%;
 }
 
 .new_inquiry textarea {
-	margin-left: 100px;
-	width: 500px;
-	height: 50px;
-	padding: 5px; 
+	margin-left: 2.5%;
+	width: 200%;
+	height: 100%;
+	padding: 3%; 
 	border: 2px solid #ccc; 
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
@@ -224,11 +237,11 @@ request div {
 	}
 
 .contact_form p{
-	font-size: 19px;
+	font-size: medium;
 }
 
 .new_inquiry input[type=text]  {
-	padding: 5px; 
+	padding: 2.5%; 
 	border: 2px solid #ccc; 
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
@@ -264,15 +277,17 @@ request div {
 	display:inline-block;
 	color:#777777;
 	font-family:Arial;
-	font-size:15px;
+	font-size:medium;
 	font-weight:bold;
 	font-style:normal;
 	height:40px;
 	line-height:40px;
-	width:105px;
+	width:50%;
 	text-decoration:none;
 	text-align:center;
 	text-shadow:1px 1px 0px #ffffff;
+	
+	margin-top:10%
 }
 
 .new_inquiry input[type=submit]:hover {
@@ -293,6 +308,7 @@ request div {
 .thanks {
 
 	
-	margin-bottom: 50px;
-
+	margin-bottom: 20%;
+	font-size: 100%;
+	
 }
