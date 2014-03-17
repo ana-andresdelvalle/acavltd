@@ -1,7 +1,7 @@
 # config/initializers/pony.rb
  
 Pony.options = {
-  :to => 'acandresdelvalle@gmail.com',
+  :to => 'ana.andres@ieee.org',
   :via => :smtp,
   :via_options => {
     :address              => 'smtp.gmail.com',
