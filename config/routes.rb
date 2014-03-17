@@ -2,6 +2,8 @@ Acavltd::Application.routes.draw do
   get "static_pages/home" 
   root "static_pages#home"
   
+  match '/contact',  to: 'inquiries#new',  via: 'get'
+  
 	resources :inquiries, :only => [:new, :create] do
 		get 'thank_you', :on => :collection
 	end
