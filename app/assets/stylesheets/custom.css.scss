@@ -26,9 +26,28 @@ textarea {
 
 
 /* header */
-header {
+header a{
 
 	text-decoration:none;
+}
+
+a.logo_a { 
+  color: #fff;
+  font-size: 90px;
+  font-family: Verdana;
+}
+
+a.logo_a:visited { 
+  color: #fff;
+  
+}
+
+a.logo_a:hover { 
+  color: #eee;
+}
+
+a.logo_a:active { 
+  color: #fff;
 }
 
 header img {
