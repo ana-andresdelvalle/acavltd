@@ -213,9 +213,9 @@ display: inline;
 }
 
 
-/* obsolete NO CONTACT button anymore */
+/* customised buttons */
 
-.contact {
+.button {
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -245,12 +245,13 @@ display: inline;
 	font-style:normal;
 	height:40px;
 	line-height:40px;
-	width: 100px;
+	width: 120px;
 	text-decoration:none;
 	text-align:center;
 	text-shadow:1px 1px 0px #ffffff;
 
-	margin-left: 2%;
+	float: right;
+	margin-top: 10px;
 	
 }
 
