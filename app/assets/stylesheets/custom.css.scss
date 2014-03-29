@@ -82,14 +82,73 @@ header hr {
 
 	
 }
+
+ /* mobile first design */
+ 
+ /* presentation */
+
+.presentation {
+
+
+	background-color: #36F;
+	min-width: 25%;
+	max-width: 70%;
+	float: left;
+	padding: 20px;
+	
+	
+
+}
+
+/* rightform */
+
+.rightform {
+
+	
+
+	background-color: #999;
+	width: 400px;
+	float: left;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-top:	20px;
+	margin-right:	20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-top:	20px;
+	padding-right:	20px;
+	
+	-webkit-border-top-left-radius:20px;
+	-moz-border-radius-topleft:20px;
+	border-top-left-radius:20px;
+	-webkit-border-top-right-radius:20px;
+	-moz-border-radius-topright:20px;
+	border-top-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	-moz-border-radius-bottomright:20px;
+	border-bottom-right-radius:20px;
+	-webkit-border-bottom-left-radius:20px;
+	-moz-border-radius-bottomleft:20px;
+	border-bottom-left-radius:20px;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+
+
+}
+
+
+
+
+@media (min-width: 1000px)
+{
 /* presentation */
 
 .presentation {
 
 
 	background-color: #36F;
-	min-width: 50%;
-	max-width: 60%;
+	min-width: 25%;
+	max-width: 50%;
 	float: left;
 	padding: 20px;
 	
@@ -132,6 +191,8 @@ header hr {
 
 
 }
+}
+
 
 /* illustration */
 
