@@ -74,7 +74,7 @@ header {
 	
 	font-style: normal;
 	font-size: small;
-	max-width: 200px;
+	width: 300px;
 	float: left;
 	overflow-y: hidden;
 	padding-top: 10px;
@@ -100,6 +100,7 @@ header img {
 		float: 		right;
 		display: 	block;
 		height: 	122px;
+		
 		
 		
 		a, a:hover{
@@ -220,10 +221,11 @@ presentation {
 		background-color: #fff;
 		width: 100%;
 		display: block;
-		min-width: 1000px;
-@media (min-height: 600px)
+		min-height: 600px;		
+		
+@media (min-width: 1000px)
 {
-		min-height: 600px;
+		min-height: 0px;
 }
 		padding: 0px;
 		margin: 	0px;
@@ -240,7 +242,7 @@ presentation {
 	.illustration { 
 		width: 800px;
 		padding: 0px;
-		margin: 0px;
+		margin-top: 0px;
 	} 
 
 	/* messages */
@@ -339,9 +341,11 @@ services {
 		
 		padding: 0px;
 		margin: 0px;
-@media (min-height: 600px)
+		min-height: 1300px;
+		
+@media (min-width: 1000px)
 {
-		min-height: 1200px;
+		min-height: 0px;
 }
 		
 		
@@ -369,6 +373,8 @@ services {
 		background-color:	rgba(0,0,0,0);  /*transparent background */
 		
 		max-width: 70%;
+		min-width: 700px;
+
 		padding-top: 50px;
 		padding-left:	50px;
 	}
@@ -403,9 +409,12 @@ whyus {
 		background-color: #fff;
 		width: 100%;
 		display: block;
-@media (min-height: 600px)
+
+		min-height: 900px;
+
+@media (min-width: 1000px)
 {
-		min-height: 1100px;
+		min-height: 0px;
 }
 	
 		padding: 0px;
@@ -434,10 +443,10 @@ whyus {
 		top: 122px;
 		left:	0px;
 		background-color:	rgba(0,0,0,0);  /*transparent background */
-		
 		max-width: 70%;
+		min-width: 700px;
 		padding-top: 50px;
-		padding-left:	50px;
+		padding-left:	30px;
 	}
 
 	messages ul {
