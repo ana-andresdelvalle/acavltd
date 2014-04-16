@@ -95,48 +95,101 @@ header img {
 /* header menu */
 
 
+	.menu {
 
-.menu {
-
-	float: 		right;
-	display: 	block;
-	height: 	10%;
-	width: 		75%;
-	
-	a, a:hover{
-
-		text-decoration:none;
-
-	}
-
-	a:hover{
-		color: #222;
-	}
-	a{
-		color: #DDD; 
-	}
-
-	ul {
-		list-style-type: none;
-		padding-top: 60px;
-		padding-right: 10%;
-		margin: 0px;
-		position: absolute;
-		top: 0px;
-		right: 0px;
+		float: 		right;
+		display: 	block;
+		height: 	10%;
+		width: 		75%;
 		
-		li{
-			display: inline;
-			font-size: 30px;
-			font-family: arial;
-			font-weight: normal;
-			padding-top: 25px;
-			padding-left: 60px;
-			
+		a, a:hover{
+
+			text-decoration:none;
+
 		}
-	
+
+		a:hover{
+			color: #222;
+		}
+		a{
+			color: #DDD; 
+		}
+
+		ul {
+			list-style-type: none;
+			padding-top: 10px;
+			padding-right: 10px;
+			margin: 0px;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			
+			li{
+				
+				font-size: 10px;
+				font-family: arial;
+				font-weight: normal;
+				padding-top: 10px;
+				padding-left: 10px;
+				
+			}
+		
+		}
 	}
+
+
+
+@media (min-width: 1000px)
+{
+
+
+
+
+	.menu {
+
+		float: 		right;
+		display: 	block;
+		height: 	10%;
+		width: 		75%;
+		
+		a, a:hover{
+
+			text-decoration:none;
+
+		}
+
+		a:hover{
+			color: #222;
+		}
+		a{
+			color: #DDD; 
+		}
+
+		ul {
+			list-style-type: none;
+			padding-top: 60px;
+			padding-right: 10%;
+			margin: 0px;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			
+			li{
+				display: inline;
+				font-size: 30px;
+				font-family: arial;
+				font-weight: normal;
+				padding-top: 25px;
+				padding-left: 60px;
+				
+			}
+		
+		}
+	}
+
+
 }
+
 
 header hr {
 	color: #FFF;
@@ -156,6 +209,8 @@ header hr {
 }
 
  /* mobile first design */
+
+
  
  /* presentation */
 
@@ -258,16 +313,6 @@ presentation {
 
 
 	}
-
-
-@media (min-width: 1200px)
-{
-/* presentation */
-
-
-/* rightform */
-
-}
 
 
 
