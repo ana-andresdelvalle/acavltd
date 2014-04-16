@@ -1,17 +1,22 @@
 <!-- app/views/static_pages/presentation.html.erb -->
 
-<div class="presentation">
-<img id="main_image" class="illustration" alt="Technology incertitude?" src="http://ana.andres.free.fr/heroku/acavltd/question.jpg">
+<presentation class="presentation">
+<%= image_tag("presentation.png", class: "illustration") %>
+
 <messages class="messages">
 	<ul>
-		<li><p>Are you unsure how novel technology will impact your business? </p></li>
-		<li><p>Do you fear your business is not using the right tools to compete in the 21st century? </p></li>
-		<li><p>Would you like to find out how technology will be changing your business workforce?</p></li>
+		<li><b>Are you unsure how novel technology will impact your business?</b></li>
+		<li><b>Do you fear your business is not using the right tools to compete in 
+		the 21st century?</b></li>
+		<li><b>Would you like to find out how technology will be changing your 
+		business workforce?</b></li>
 		
 	</ul>
-	
+	<p>&nbsp;</p>
+	<p><%= link_to "Contact us", contact_path, class: "contact_link" %></p>
 	
 </messages>
-</div>
+
+</presentation>
 
 

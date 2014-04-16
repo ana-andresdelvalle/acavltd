@@ -1,11 +1,24 @@
 <!-- app/views/inquiries/_contact.html.erb -->
-<div class="rightform">
+<script type = 'text/javascript'>
+$( document ).ready(
+	function() {
+		$(".menu_item_contact").css("color", "#222");
+	}
+);
+</script>
 
-<div class="contact_form"> 
-<h1>How can we help you?</h1>
-<p>Share your challenge with us. We will contact you back in less than 24h.</p>
- 
-<%= render 'inquiries/form', :inquiry => @inquiry %>
-</div>
+<presentation class="presentation">
 
-</div>
+	<%= image_tag("presentation.png", class: "illustration") %>
+
+
+	<div class="rightform">
+		<div class="contact_form"> 
+			<h1>How can we help you?</h1>
+			<p>Share your challenge with us. We will contact you back in less than 24h.</p>
+			 
+			<%= render 'inquiries/form', :inquiry => @inquiry %>
+		</div>
+	</div>
+	
+</presentation>

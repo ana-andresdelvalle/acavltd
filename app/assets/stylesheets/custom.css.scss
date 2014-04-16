@@ -1,11 +1,16 @@
-/* @import "bootstrap"; */
+@import "bootstrap"; 
 
 /* universal */
 
 * {
-	moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
+	moz-box-sizing:    border-box;    /* Firefox 1, probably can drop this */
    -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
     box-sizing:        border-box;   /* Everything else */
+}
+
+.container{
+	margin-left:	0px;
+	width: 	100%;
 }
 
 html {
@@ -13,10 +18,12 @@ html {
 }
 
 body {
-  padding-top: 1%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  background-color: #36F;
+  padding-top:0%;
+  padding-left: 0%;
+  padding-right: 0%;
+  border-left: 	0px;
+  border-right:	0px;
+  background-color: #FFF;
   color: #FFFFFF;
   font-family:"Calibri", Verdana, sans-serif;
 
@@ -33,47 +40,111 @@ textarea {
 
 /* header */
 
+header {
+	
+	background-color: #36a;
+	height: 122px;
+
+}
+
+.logo{
+
+		a, a:hover{
+
+		text-decoration:none;
+
+	}
+
+	a:hover{
+		color: #FFF;
+	}
+	a{
+		color: #FFF; 
+	}
+	
+	font-family: Georgia;
+	font-size:	60px;
+	font-weight:  bold;
+	padding-top:	50px;
+	padding-left:	30px;
+	
+}
+
 .slogan{
-	font-size: 125%;
-	font-style: italic;
+	
+	font-style: normal;
+	font-size: small;
+	max-width: 25%;
+	float: left;
+	overflow-y: hidden;
+	padding-top: 10px;
+	margin-left: 	140px;
 }
+	
 
-header a{
-
-	text-decoration:none;
-}
-
-a.logo_a { 
-  color: #fff;
-  font-size: 250%;
-  font-family: Verdana;
-  font-weight: bold;
-}
-
-a.logo_a:visited { 
-  color: #fff;
-  
-}
-
-a.logo_a:hover { 
-  color: #eee;
-}
-
-a.logo_a:active { 
-  color: #fff;
-}
+	
 
 header img {
-	width: 33%;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+}
 
+
+/* header menu */
+
+
+
+.menu {
+
+	float: 		right;
+	display: 	block;
+	height: 	10%;
+	width: 		75%;
+	
+	a, a:hover{
+
+		text-decoration:none;
+
+	}
+
+	a:hover{
+		color: #222;
+	}
+	a{
+		color: #DDD; 
+	}
+
+	ul {
+		list-style-type: none;
+		padding-top: 60px;
+		padding-right: 10%;
+		margin: 0px;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		
+		li{
+			display: inline;
+			font-size: 30px;
+			font-family: arial;
+			font-weight: normal;
+			padding-top: 25px;
+			padding-left: 60px;
+			
+		}
+	
+	}
 }
 
 header hr {
 	color: #FFF;
 	background-color: #FFF;
-	height: 2px;
+	height: 0px;
 	border-width: 0px;
 	padding-top: 0px;
+	margin: 	0px;
 
 }
 
@@ -88,121 +159,117 @@ header hr {
  
  /* presentation */
 
-.presentation {
+presentation {
 
 
-	background-color: #36F;
-	min-width: 25%;
-	max-width: 90%;
-	float: left;
-	padding: 20px;
-	
-	
+		background-color: #fff;
+		width: 100%;
+		display: block;
+		min-width: 1000px;
+		padding: 0px;
+		margin: 	0px;
+		
+		
+
+	p{
+		float: 	right;
+		font-size: 45px;
+	}
+
+	/* illustration */
+
+	.illustration { 
+		width: 800px;
+		padding: 0px;
+		margin: 0px;
+	} 
+
+	/* messages */
+
+	messages {
+		color: #222;
+		font-family:"Calibri", Verdana, sans-serif;
+		
+		position: 	absolute;
+		top: 122px;
+		right:	0px;
+		background-color:	rgba(0,0,0,0);  /*transparent background */
+		
+		max-width: 60%;
+		min-width: 450px;
+		padding-top: 50px;
+		padding-right:	50px;
+	}
+
+	messages ul {
+		font-size: 2.5em;
+		
+		list-style-type: none;
+		
+		li{
+			padding-top: 	10px;
+			padding-bottom:	30px;
+			line-height: 100%;
+					
+		}
+		
+	}
 
 }
 
-/* rightform */
-
-.rightform {
-
-	
-
-	background-color: #999;
-	width: 400px;
-	float: left;
-	margin-bottom: 20px;
-	margin-left: 20px;
-	margin-top:	20px;
-	margin-right:	20px;
-	padding-bottom: 20px;
-	padding-left: 20px;
-	padding-top:	20px;
-	padding-right:	20px;
-	
-	-webkit-border-top-left-radius:20px;
-	-moz-border-radius-topleft:20px;
-	border-top-left-radius:20px;
-	-webkit-border-top-right-radius:20px;
-	-moz-border-radius-topright:20px;
-	border-top-right-radius:20px;
-	-webkit-border-bottom-right-radius:20px;
-	-moz-border-radius-bottomright:20px;
-	border-bottom-right-radius:20px;
-	-webkit-border-bottom-left-radius:20px;
-	-moz-border-radius-bottomleft:20px;
-	border-bottom-left-radius:20px;
-	text-indent:0;
-	border:1px solid #dcdcdc;
 
 
-}
+	/* rightform */
 
 
+		
+
+	.rightform {
+
+		
+
+		background-color: #999;
+		width: 400px;
+		position: 	absolute;
+		top: 122px;
+		right:	0px;
+		margin-top:	50px;
+		margin-right: 10%;
+
+		padding-bottom: 20px;
+		padding-left: 20px;
+		padding-top:	20px;
+		padding-right:	20px;
+		
+		-webkit-border-top-left-radius:20px;
+		-moz-border-radius-topleft:20px;
+		border-top-left-radius:20px;
+		-webkit-border-top-right-radius:20px;
+		-moz-border-radius-topright:20px;
+		border-top-right-radius:20px;
+		-webkit-border-bottom-right-radius:20px;
+		-moz-border-radius-bottomright:20px;
+		border-bottom-right-radius:20px;
+		-webkit-border-bottom-left-radius:20px;
+		-moz-border-radius-bottomleft:20px;
+		border-bottom-left-radius:20px;
+		text-indent:0;
+		border:1px solid #dcdcdc;
+
+
+	}
 
 
 @media (min-width: 1200px)
 {
 /* presentation */
 
-.presentation {
-
-
-	background-color: #36F;
-	min-width: 25%;
-	max-width: 60%;
-	float: left;
-	padding: 20px;
-	
-	
-
-}
 
 /* rightform */
 
-.rightform {
-
-	
-
-	background-color: #999;
-	width: 400px;
-	float: right;
-	margin-bottom: 20px;
-	margin-left: 20px;
-	margin-top:	20px;
-	margin-right:	20px;
-	padding-bottom: 20px;
-	padding-left: 20px;
-	padding-top:	20px;
-	padding-right:	20px;
-	
-	-webkit-border-top-left-radius:20px;
-	-moz-border-radius-topleft:20px;
-	border-top-left-radius:20px;
-	-webkit-border-top-right-radius:20px;
-	-moz-border-radius-topright:20px;
-	border-top-right-radius:20px;
-	-webkit-border-bottom-right-radius:20px;
-	-moz-border-radius-bottomright:20px;
-	border-bottom-right-radius:20px;
-	-webkit-border-bottom-left-radius:20px;
-	-moz-border-radius-bottomleft:20px;
-	border-bottom-left-radius:20px;
-	text-indent:0;
-	border:1px solid #dcdcdc;
-
-
-}
 }
 
 
-/* illustration */
-
-
-#main_image { 
-	width: 35%;
-	float: left;
-	padding-top: 10px;
-} 
 
 
 /* general */
@@ -211,32 +278,141 @@ header hr {
 	display: inline;
 }
 	
-/* messages */
 
-messages {
-	color: #CFF;
-	font-family:"Calibri", Verdana, sans-serif;
-	float: right;
-	background-color: #36F;
-	max-width: 65%;
+ /* services */
+
+services {
+
+
+		background-color: #fff;
+		width: 100%;
+		display: block;
+		
+		padding: 0px;
+		margin: 0px;
+		
+		
+
 	
-}
 
-messages ul {
-	font-size: 150%;
-	list-style-type: none;
+	/* illustration */
+
+	.illustration { 
+		width: 1150px;
+		padding: 0px;
+		margin: 0px;
+		float: right;
+	} 
+
+	/* messages */
+
+	messages {
+		color: #222;
+		font-family:"Calibri", Verdana, sans-serif;
+		
+		position: 	absolute;
+		top: 122px;
+		left:	0px;
+		background-color:	rgba(0,0,0,0);  /*transparent background */
+		
+		max-width: 70%;
+		padding-top: 50px;
+		padding-left:	50px;
+	}
+
+	messages ul {
+		font-size: 2.5em;
+		
+		list-style-type: none;
+		
+		p{
+			font-size: 0.75em;	
+			line-height: 110%;	
+		}
+
+		li{
+			padding-top: 	10px;
+			padding-bottom:	30px;
+			line-height: 100%;
+					
+		}
+		
+	}
+
+}
 	
+	
+ /* whyus */
+
+whyus {
+
+
+		background-color: #fff;
+		width: 100%;
+		display: block;
+		
+		padding: 0px;
+		margin: 	0px;
+		
+		
+
+	
+
+	/* illustration */
+
+	.illustration { 
+		width: 1150px;
+		padding: 0px;
+		margin: 0px;
+		float: right;
+	} 
+
+	/* messages */
+
+	messages {
+		color: #222;
+		font-family:"Calibri", Verdana, sans-serif;
+		
+		position: 	absolute;
+		top: 122px;
+		left:	0px;
+		background-color:	rgba(0,0,0,0);  /*transparent background */
+		
+		max-width: 70%;
+		padding-top: 50px;
+		padding-left:	50px;
+	}
+
+	messages ul {
+		font-size: 2.5em;
+		
+		list-style-type: none;
+		
+		p{
+			font-size: 0.75em;	
+			line-height: 110%;	
+		}
+
+		li{
+			padding-top: 	10px;
+			padding-bottom:	30px;
+			line-height: 100%;
+					
+		}
+		
+	}
+
 }
-
-
+	
 
 /* footer */
 
 footer hr {
 	color: #FFF;
 	background-color: #FFF;
-	height: 2px;
+	height: 0px;
 	border-width: 0px;
+	margin-top: 0px;
  
 }
 
@@ -244,9 +420,10 @@ footer hr {
 	color: #CCC;
 	
 	position:relative;
+	top: 0px;
 	float: right;
-   width: 100%;
-   background:#3366FF;
+    width: 100%;
+    background:	#444;
    
 
 }
@@ -261,18 +438,25 @@ footer a:hover {
 }
 
 footer small {
-  float: left;
+  float: right;
   font-size: 100%;
+  margin-right:	10px;
   
 }
 
 #share-buttons img {
 width: 50px;
-padding: .5%;
+padding-left: .5%;
+padding-right: .5%;
 border: 0;
 box-shadow: 0;
 display: inline;
 }
+
+#share-buttons {
+	float: left;
+	margin-left: 20px;
+	}
 
 
 /* customised buttons */

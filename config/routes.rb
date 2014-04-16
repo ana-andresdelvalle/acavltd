@@ -1,6 +1,12 @@
 Acavltd::Application.routes.draw do
   get "static_pages/home" 
-  root "inquiries#new"
+  
+  match '/why_us',    to: 'static_pages#why_us',    via: 'get'
+  match '/services',   to: 'static_pages#services',   via: 'get'
+
+  
+  root "static_pages#home"
+  
   
   match '/contact',  to: 'inquiries#new',  via: 'get'
   

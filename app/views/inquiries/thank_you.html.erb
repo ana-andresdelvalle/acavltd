@@ -2,8 +2,20 @@
   <meta name="robots" content="noindex" />
 <% end %>
 
-<%= render 'ga_thank_you' %>
+<script type = 'text/javascript'>
+$( document ).ready(
+	function() {
+		$(".menu_item_services").css("color", "#DDD");
+		$(".menu_item_whyus").css("color", "#DDD");
+		$(".menu_item_contact").css("color", "#222");
+	}
+);
+</script>
 
-<%= render 'thanks' %>
+<presentation class="presentation">
 
-<%= render 'static_pages/presentation' %>
+	<%= render 'ga_thank_you' %>
+	<img class="illustration" alt="Technology incertitude?" src="http://ana.andres.free.fr/heroku/acavltd/question.jpg">
+	<%= render 'thanks' %>
+
+</presentation>

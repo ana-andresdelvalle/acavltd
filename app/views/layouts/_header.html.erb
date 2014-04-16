@@ -1,8 +1,21 @@
 <header class="header">
-<!-- a href="<%= root_path %>"><img id="logo" alt="ACAV Ltd." src="http://ana.andres.free.fr/heroku/acavltd/logo.png" /></a //-->
-<%= link_to "ACAV Ltd", root_path, class: "logo_a" %>
-<hr>
-<div class="slogan">
-Simple, Serious and Honest Advice
-</div>
+
+	<!-- %= link_to image_tag("logo.png", class: "logo_img"), root_path, class: "logo_a" % //-->
+	<p class="logo"><%= link_to "ACAV   Ltd", root_path %></p>
+	
+	<p class="slogan">Simple, Serious and Honest Advice</p>
+	
+	<div class="menu">
+		<ul class="menu_items">
+		
+			<li ><%= link_to "WHY US", why_us_path, class: "menu_item_whyus" %></li>
+			<li ><%= link_to "SERVICES", services_path, class: "menu_item_services" %></li>
+			<li ><%= link_to "CONTACT", contact_path, class: "menu_item_contact" %></li>
+					
+		</ul>
+	
+	</div>
+	<div style="clear: both"></div>
+	<hr>
+
 </header>
