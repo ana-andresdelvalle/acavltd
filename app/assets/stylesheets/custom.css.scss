@@ -74,7 +74,7 @@ header {
 	
 	font-style: normal;
 	font-size: small;
-	max-width: 25%;
+	max-width: 200px;
 	float: left;
 	overflow-y: hidden;
 	padding-top: 10px;
@@ -100,7 +100,7 @@ header img {
 		float: 		right;
 		display: 	block;
 		height: 	10%;
-		width: 		75%;
+		
 		
 		a, a:hover{
 
@@ -138,8 +138,7 @@ header img {
 	}
 
 
-
-@media (min-width: 600px)
+@media (min-width: 1000px)
 {
 
 
@@ -150,7 +149,7 @@ header img {
 		float: 		right;
 		display: 	block;
 		height: 	10%;
-		width: 		75%;
+		
 		
 		a, a:hover{
 
@@ -168,7 +167,7 @@ header img {
 		ul {
 			list-style-type: none;
 			padding-top: 60px;
-			padding-right: 10%;
+			padding-right: 100px;
 			margin: 0px;
 			position: absolute;
 			top: 0px;
@@ -189,6 +188,7 @@ header img {
 
 
 }
+
 
 
 header hr {
@@ -221,6 +221,10 @@ presentation {
 		width: 100%;
 		display: block;
 		min-width: 1000px;
+@media (min-height: 800px)
+{
+		min-height: 600px;
+}
 		padding: 0px;
 		margin: 	0px;
 		
@@ -335,6 +339,10 @@ services {
 		
 		padding: 0px;
 		margin: 0px;
+@media (min-height: 800px)
+{
+		min-height: 1200px;
+}
 		
 		
 
@@ -395,9 +403,13 @@ whyus {
 		background-color: #fff;
 		width: 100%;
 		display: block;
-		
+@media (min-height: 800px)
+{
+		min-height: 1100px;
+}
+	
 		padding: 0px;
-		margin: 	0px;
+		margin: 0px;
 		
 		
 
