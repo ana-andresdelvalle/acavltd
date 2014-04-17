@@ -44,6 +44,7 @@ header {
 	
 	background-color: #36a;
 	height: 122px;
+	min-width: 550px;
 
 }
 
@@ -127,7 +128,7 @@ header img {
 			
 			li{
 				
-				font-size: 10px;
+				font-size: 20px;
 				font-family: arial;
 				font-weight: normal;
 				padding-top: 10px;
@@ -139,7 +140,7 @@ header img {
 	}
 
 
-@media (min-width: 1000px)
+@media (min-width: 1050px)
 {
 
 
@@ -168,7 +169,7 @@ header img {
 		ul {
 			list-style-type: none;
 			padding-top: 60px;
-			padding-right: 100px;
+			padding-right: 60px;
 			margin: 0px;
 			position: absolute;
 			top: 0px;
@@ -183,11 +184,8 @@ header img {
 				padding-left: 60px;
 				
 			}
-		
 		}
 	}
-
-
 }
 
 
@@ -217,55 +215,53 @@ header hr {
 
 presentation {
 
-
+		min-height: 600px;
+	
 		background-color: #fff;
 		width: 100%;
+		height: 100%;
 		display: block;
-		min-height: 600px;		
 		
-@media (min-width: 1000px)
-{
-		min-height: 0px;
-}
 		padding: 0px;
-		margin: 	0px;
+		margin: 0px;
+
+	@media (min-width: 800px)  /*to be changed once content is agreed */
+	{
+
+		background-image:  image-url("presentation.png");  /*lighter background */
+		background-repeat:no-repeat;
+		background-position: left right;	
+	}
+	
 		
 		
 
 	p{
-		float: 	right;
+		margin-left: 100px;
+		margin-bottom: 60px;
 		font-size: 45px;
 	}
-
-	/* illustration */
-
-	.illustration { 
-		width: 800px;
-		padding: 0px;
-		margin-top: 0px;
-	} 
 
 	/* messages */
 
 	messages {
-		color: #222;
-		font-family:"Calibri", Verdana, sans-serif;
-		
-		position: 	absolute;
-		top: 122px;
-		right:	0px;
+		color: 	#222;
+		font-family:	"Calibri", Verdana, sans-serif;
 		background-color:	rgba(0,0,0,0);  /*transparent background */
-		
-		max-width: 60%;
-		min-width: 450px;
-		padding-top: 50px;
-		padding-right:	50px;
+		display:	block;
 	}
 
 	messages ul {
 		font-size: 2.5em;
 		
 		list-style-type: none;
+		
+		width: 70%;
+		
+		padding-top: 60px;
+		padding-bottom: 40px;
+		
+		margin-left: 30px;
 		
 		li{
 			padding-top: 	10px;
@@ -287,8 +283,6 @@ presentation {
 
 	.rightform {
 
-		
-
 		background-color: #999;
 		width: 400px;
 		position: 	absolute;
@@ -298,7 +292,7 @@ presentation {
 		margin-right: 10%;
 
 		padding-bottom: 20px;
-		padding-left: 20px;
+		padding-left: 	20px;
 		padding-top:	20px;
 		padding-right:	20px;
 		
@@ -317,11 +311,7 @@ presentation {
 		text-indent:0;
 		border:1px solid #dcdcdc;
 
-
 	}
-
-
-
 
 /* general */
 
@@ -337,52 +327,40 @@ services {
 
 		background-color: #fff;
 		width: 100%;
+		height: 100%;
 		display: block;
 		
 		padding: 0px;
 		margin: 0px;
-		min-height: 1300px;
-		
-@media (min-width: 1000px)
-{
-		min-height: 0px;
-}
-		
-		
 
+	@media (min-width: 800px)  /*to be changed once content is agreed */
+	{
+
+		background-image:  image-url("services.png");  /*lighter background */
+		background-repeat:no-repeat;
+		background-position:right top;	
+	}
 	
-
-	/* illustration */
-
-	.illustration { 
-		width: 1150px;
-		padding: 0px;
-		margin: 0px;
-		float: right;
-	} 
-
 	/* messages */
 
 	messages {
-		color: #222;
-		font-family:"Calibri", Verdana, sans-serif;
-		
-		position: 	absolute;
-		top: 122px;
-		left:	0px;
+	
+		color: 	#222;
+		font-family:	"Calibri", Verdana, sans-serif;
 		background-color:	rgba(0,0,0,0);  /*transparent background */
-		
-		max-width: 70%;
-		min-width: 700px;
-
-		padding-top: 50px;
-		padding-left:	50px;
+		display:	block;
 	}
 
 	messages ul {
+	
 		font-size: 2.5em;
 		
 		list-style-type: none;
+		
+		width: 70%;
+		
+		padding-top: 30px;
+		padding-left: 30px;
 		
 		p{
 			font-size: 0.75em;	
@@ -408,52 +386,40 @@ whyus {
 
 		background-color: #fff;
 		width: 100%;
+		height: 100%;
 		display: block;
-
-		min-height: 900px;
-
-@media (min-width: 1000px)
-{
-		min-height: 0px;
-}
-	
+		
 		padding: 0px;
 		margin: 0px;
-		
-		
 
-	
+	@media (min-width: 800px) /*to be changes once content is stable*/
+	{
 
-	/* illustration */
-
-	.illustration { 
-		width: 1150px;
-		padding: 0px;
-		margin: 0px;
-		float: right;
-	} 
+		background-image:  image-url("whyus.png");
+		background-repeat:no-repeat;
+		background-position:right top;	
+	}
 
 	/* messages */
 
 	messages {
-		color: #222;
-		font-family:"Calibri", Verdana, sans-serif;
-		
-		position: 	absolute;
-		top: 122px;
-		left:	0px;
+
+		color: 	#222;
+		font-family:	"Calibri", Verdana, sans-serif;
 		background-color:	rgba(0,0,0,0);  /*transparent background */
-		max-width: 70%;
-		min-width: 700px;
-		padding-top: 50px;
-		padding-left:	30px;
-	}
+		display:	block;
+
+		}
 
 	messages ul {
 		font-size: 2.5em;
 		
 		list-style-type: none;
 		
+		width: 70%;
+		
+		padding-top: 30px;
+		padding-left: 30px;
 		p{
 			font-size: 0.75em;	
 			line-height: 110%;	
@@ -591,16 +557,22 @@ display: inline;
 }
 
 .contact_form h1 {
+	
 	font-size: 135%;
+
 }
 
 .contact_form p {
+
 	font-size: 125%;
+
 }
 
 
 .new_inquiry input {
+
 	margin-left: 2.5%;
+
 }
 
 .new_inquiry textarea {
