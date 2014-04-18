@@ -45,7 +45,6 @@ textarea {
 header {
 	
 	background-color: #36a;
-	height: 122px;
 	
 }
 
@@ -141,7 +140,7 @@ header img {
 	}
 
 
-@media (min-width: 1000px)
+@media (min-width: 800px) 		/* the header is very restricted t0 800px to work well*/
 {
 
 
