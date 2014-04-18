@@ -45,7 +45,6 @@ textarea {
 header {
 	
 	background-color: #36a;
-	height: 122px;
 	
 }
 
@@ -86,15 +85,52 @@ header {
 
 	
 
-header img {
-	padding-top: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-	display: block;
-}
-
 
 /* header menu */
+/* header */
+
+header {
+	
+	background-color: #36a;
+	height: 122px;	
+}
+
+.logo{
+
+		a, a:hover{
+
+		text-decoration:none;
+
+	}
+
+	a:hover{
+		color: #FFF;
+	}
+	a{
+		color: #FFF; 
+	}
+	
+	font-family: Georgia;
+	font-size:	60px;
+	font-weight:  bold;
+	padding-top:	10px;
+	padding-left:	30px;
+	
+}
+
+.slogan{
+	
+	font-style: normal;
+	font-size: small;
+	width: 300px;
+	float: left;
+	overflow-y: hidden;
+	margin-top: -15px;
+	margin-left: 	175px;
+}
+	
+
+	
 
 
 	.menu {
@@ -141,7 +177,7 @@ header img {
 	}
 
 
-@media (min-width: 1000px)
+@media (min-width: 1100px) 		/* the header is very restricted to 1100px to work well*/
 {
 
 
@@ -294,11 +330,11 @@ presentation {
 
 		background-color: #999;
 		width: 400px;
-		position: 	absolute;
+	/*	position: 	absolute;
 		top: 122px;
-		left:	0px;
+		left:	0px;*/
 		margin-top:	50px;
-		margin-right: 10%;
+		margin-left: 10%;
 
 		padding-bottom: 20px;
 		padding-left: 	20px;
@@ -412,9 +448,9 @@ presentation {
 
 		background-color: #999;
 		width: 400px;
-		position: 	absolute;
+	/*	position: 	absolute;
 		top: 122px;
-		right:	0px;
+		right:	0px; */
 		margin-top:	50px;
 		margin-right: 10%;
 
